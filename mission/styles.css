@@ -1,40 +1,32 @@
 body {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  header {
-    padding: 20px;
-  }
-  
-  h1 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-  }
-  
-  h2 {
-    color: #006EB6;
-    margin-top: 0;
-    letter-spacing: 1px;
-  }
-  
-  main {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  footer {
-    padding: 20px;
-  }
-  
-  footer img {
-    width: 150px;
-  }
-  
+  font-family: sans-serif;
+  background-color: white;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.subtitle {
+  color: #006eb6;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+img#logo {
+  width: 150px;
+  margin-top: 2rem;
+}
+
+/* Dark theme override */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.dark .subtitle {
+  color: #7ccfff; /* Use a higher contrast blue from BYUI brand palette */
+}
