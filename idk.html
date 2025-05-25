@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kid-Friendly Book Reviews</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header, nav, main, footer {
+      padding: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #6a9ebf;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #eeeeee;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .search-section, .filters {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .filters label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .book {
+      background-color: white;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    h1, h2 {
+      color: #2d5d7b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kid-Friendly Book Reviews</h1>
+    <p>Helping families find books that are fun and appropriate</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Top Rated</a>
+    <a href="#">By Genre</a>
+    <a href="#">By Age</a>
+    <a href="#">About</a>
+  </nav>
+
+  <main>
+    <section class="search-section" aria-label="Search books">
+      <h2>Search for a Book</h2>
+      <form>
+        <label for="search">Book Title:</label>
+        <input type="text" id="search" name="search" placeholder="e.g., Harry Potter" />
+      </form>
+    </section>
+
+    <section class="filters" aria-label="Filter books">
+      <h2>Filter Reviews</h2>
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option>All</option>
+        <option>Fantasy</option>
+        <option>Adventure</option>
+        <option>Mystery</option>
+      </select>
+
+      <label for="age">Age Group:</label>
+      <select id="age">
+        <option>All Ages</option>
+        <option>10-12</option>
+        <option>10 and up</option>
+        <option>12-16</option>
+      </select>
+    </section>
+
+    <section aria-label="Newest Reviews">
+      <h2>Newest Reviews</h2>
+      <div class="book-list">
+        <article class="book">
+          <h3>Book Title Example</h3>
+          <p><strong>Genre:</strong> Fantasy</p>
+          <p><strong>Age:</strong> 10 and up</p>
+          <p><strong>Summary:</strong> A quick summary of the plot, characters, and any content notes.</p>
+        </article>
+        <!-- Repeat as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kid-Friendly Book Reviews. Created by the [Family Name] family.</p>
+  </footer>
+
+</body>
+</html>
