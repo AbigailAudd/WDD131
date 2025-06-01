@@ -77,3 +77,8 @@ nav li {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
 }
+.articles img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
