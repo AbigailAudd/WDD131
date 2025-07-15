@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🎓💰 College Budget Helper</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="calculator.html">Budget Calculator</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Budget Calculator</h2>
+      <form id="budgetForm">
+        <label>Monthly Income: $<input type="number" id="income" required /></label>
+        <label>Rent: $<input type="number" id="rent" /></label>
+        <label>Food: $<input type="number" id="food" /></label>
+        <label>School: $<input type="number" id="school" /></label>
+        <label>Other: $<input type="number" id="other" /></label>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 | Abigail Audd | College Budget Helper
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
